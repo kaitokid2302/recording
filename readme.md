@@ -33,3 +33,5 @@ Phần xử lý scaler copy thẳng từ kaggle thôi, không có gì cả
 - khi chạy, nó sẽ in ra "talk now", lúc ấy ta có thể bắt đầu nói được(vì code chạy mất mấy giây, nên phải in ra như vậy để biết khi nào code thực sự ghi âm) 
 - ấn control + c để dừng chương trình
 
+
+<span style="color:red"> *file **processed_data.csv** khá nặng, không đưa lên github được, có thể tải lại từ em Hải*  text</span>.
