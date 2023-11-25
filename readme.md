@@ -34,4 +34,4 @@ Phần xử lý scaler copy thẳng từ kaggle thôi, không có gì cả
 - ấn control + c để dừng chương trình
 
 
-<span style="color:red"> *file **processed_data.csv** khá nặng, không đưa lên github được, có thể tải lại từ em Hải*  text</span>.
+<span style="color:red"> *file **processed_data.csv** khá nặng, không đưa lên github được, có thể tải lại từ em Hải* </span>.
