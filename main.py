@@ -15,7 +15,7 @@ def record():
             audio = pyaudio.PyAudio()
             stream = audio.open(format=pyaudio.paInt16, channels=1, rate=44100, input=True, frames_per_buffer=4096)
             frames = []
-            for _ in range(int(44100 / 4096 * 3)):
+            for _ in range(int(44100 / 4096 * 3.5)):
                 if ok == False:
                     print("Talk now")
                     ok = True
