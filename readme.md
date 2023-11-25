@@ -25,6 +25,9 @@ Phần xử lý scaler copy thẳng từ kaggle thôi, không có gì cả
 ```
 - chạy mô hình, nó sẽ trả về mảng, phần tử nào lớn nhất là có xác xuất ở emotion đó cao nhất, nên ta dùng argmax
 
+##### [[getfeature.py]]
+- Cũng copy lại từ kaggle, vì đây là bước xử lý âm thanh thành số, nên phải dùng code y hệt trên kaggle, chỉ khác là trên kaggle, 1 file âm thanh nó sẽ sinh ra thêm 4 biến thể, nhưng chúng ta không cần, chỉ cần dự đoán file hiện tại thôi
+
 ##### [[main.py]]
 - hàm record là ghi âm real-time, cứ mỗi 3.5 giây nó sẽ in ra cảm xúc 1 lần
 - khi chạy, nó sẽ in ra "talk now", lúc ấy ta có thể bắt đầu nói được(vì code chạy mất mấy giây, nên phải in ra như vậy để biết khi nào code thực sự ghi âm) 
