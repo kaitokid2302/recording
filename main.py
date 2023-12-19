@@ -7,6 +7,7 @@ from getfeature import get_features
 from tensorflow.keras.models import load_model
 import os
 from prediction import emotion
+import matplotlib.pyplot as plt
 
 def record():
     ok = False
@@ -33,16 +34,20 @@ def record():
             sound_file.writeframes(b''.join(frames))
             sound_file.close()
 
-
             features = get_features('myrecording.wav')
             print(features.shape) # should be (2376,)
-            print(emotion(features))
-            
+            x = emotion(features)
+            print(x)
+
+            # Plotting the wave graph
+            plt.plot(np.frombuffer(b''.join(frames), dtype=np.int16))
+            plt.title(x)
+            plt.show(block=False)
+            plt.pause(0.1)
+            plt.clf()
 
     except KeyboardInterrupt:
         print("Đã ngắt ghi âm.")
- 
-
 
 def main():
     record()
